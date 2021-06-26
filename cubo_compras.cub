@@ -1,0 +1,186 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a5105cf7-c82c-4bc0-a52a-c1be2808f9d1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>cubo_compras</ID>
+  <Name>cubo_compras</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="0d50daf0-3c3c-48b2-8f0e-cb864287045e">
+      <ID>dim_ship_method</ID>
+      <Name>dim_ship_method</Name>
+      <DimensionID>dim_ship_method</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a539659e-750d-482b-917b-90dcf48c8608">
+          <AttributeID>Ship Method ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8a55286b-a3b1-4e4e-8725-1262a6630df6">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="4ece9193-3bbe-4b74-ae00-1a17405c7f4c">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="21dd9ddd-1b00-4e23-b857-a721c82ecbd5">
+      <ID>dim_employee</ID>
+      <Name>dim_employee</Name>
+      <DimensionID>dim_employee</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a6ff7760-9e8d-4a1a-9f14-6a649bc429db">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a90b83a4-83e5-49cd-81e4-d31c5b8b3861">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="b105ae99-154e-4380-90e8-5ac990222ee8">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="7b83026f-f8c3-4588-ae55-456c38493698">
+      <ID>dim_vendor</ID>
+      <Name>dim_vendor</Name>
+      <DimensionID>dim_vendor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3483b1b7-f418-4bee-9f6d-8c87206abd10">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91878835-cf57-4467-8769-f8b0861255f9">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="67475819-b3c8-47b5-a2e6-fd79deabbd08">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="44aa002f-557b-4d1c-8bf6-d40d4a7e3fba">
+      <ID>Purchase Order Header</ID>
+      <Name>Purchase Order Header</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c76117d7-ab41-443e-b007-a4006b6ccf93">
+          <ID>Total Due</ID>
+          <Name>Total Due</Name>
+          <Source dwd:design-time-name="d8b94bec-cec4-41a9-b480-4284324e4e39">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c4838d1d-e957-42ba-bf49-1c2ac175eab2">
+              <TableID>Purchasing_PurchaseOrderHeader</TableID>
+              <ColumnID>TotalDue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="921adbf9-2c53-476f-abe3-31ad9d442a45">
+          <CubeDimensionID>dim_employee</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="89ad8ae6-79de-4545-b3df-d8a7e512b6b4">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c45bbe2e-37ea-4952-b926-0cb9b61ff098">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f9bc70c-2ec3-400d-850f-4f39aeb17de1">
+                    <TableID>Purchasing_PurchaseOrderHeader</TableID>
+                    <ColumnID>EmployeeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fb6f29af-cc93-4a5c-88bb-0dbfa40468cc">
+          <CubeDimensionID>dim_ship_method</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="87a69800-59ea-4156-a1c4-806113c89410">
+              <AttributeID>Ship Method ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b7866ab4-3ab8-49d9-9674-9c1ce201357f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f909439b-2498-4785-be5f-af8a75fbd6b3">
+                    <TableID>Purchasing_PurchaseOrderHeader</TableID>
+                    <ColumnID>ShipMethodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c30a0c3f-9ae0-4bd4-804f-16d806b14b00">
+          <CubeDimensionID>dim_vendor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b312142e-9b3a-4274-b28b-f84f3f3430bd">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5c7dee07-c356-4ae2-8bc6-add8dc2430c2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2887f13a-d8a6-4ea7-9290-c54737b1ff10">
+                    <TableID>Purchasing_PurchaseOrderHeader</TableID>
+                    <ColumnID>VendorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="138a3a98-9319-4247-affa-e703b6bf1f0a">
+    <DataSourceViewID>Adventure Works2019</DataSourceViewID>
+  </Source>
+</Cube>
